@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About – Farm4Uself</title>
+<style>
+:root{--g:#2f6b3a;--gd:#1f4a28;--gl:#e6f0e3;--cream:#faf7f0;--card:#fff;--ink:#23291f;--mut:#5c6456;--line:#dcd8cb;--gold:#c28e1f;--br:#6b4a2b;--r:10px;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--g:#7fc08a;--gd:#a8d9b0;--gl:#233326;--cream:#161a14;--card:#1f241c;--ink:#ecebe3;--mut:#a9ae9f;--line:#363c31;--gold:#e0b34a;--br:#d1a679}}
+:root[data-theme=dark]{--g:#7fc08a;--gd:#a8d9b0;--gl:#233326;--cream:#161a14;--card:#1f241c;--ink:#ecebe3;--mut:#a9ae9f;--line:#363c31;--gold:#e0b34a;--br:#d1a679}
+*,*:before,*:after{box-sizing:inherit}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.55 "Trebuchet MS","Segoe UI",Verdana,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em;color:var(--ink)}
+h1{font-size:clamp(2rem,5vw,3.2rem)}h2{font-size:1.6rem}h3{font-size:1.15rem}p{margin:0 0 1em}a{color:var(--g)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}.mut{color:var(--mut);font-size:.92rem}
+header{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;gap:18px;min-height:64px}
+.logo{font:700 1.3rem Georgia,serif;color:var(--gd);text-decoration:none;display:flex;align-items:center;gap:8px}
+.home-l{font-weight:700;margin-right:auto!important}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--g);display:inline-block;position:relative}
+.logo i:after{content:"";position:absolute;left:9px;top:6px;width:12px;height:18px;background:var(--cream);border-radius:0 100% 0 100%}
+nav{display:flex;gap:2px;align-items:center}nav a.l,.home-l{padding:8px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.95rem;white-space:nowrap}
+nav a.l:hover{background:var(--gl)}nav a.l[aria-current=page]{background:var(--gl);color:var(--gd);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:10px 18px;border-radius:8px;border:2px solid var(--g);background:var(--g);color:#fff;font:700 .95rem inherit;font-family:inherit;cursor:pointer;text-decoration:none;transition:background .15s,transform .1s;min-height:44px}
+.btn:hover{background:var(--gd);border-color:var(--gd)}.btn:active{transform:scale(.98)}
+.btn.o{background:transparent;color:var(--g)}.btn.o:hover{background:var(--gl)}.btn.sm{padding:6px 12px;min-height:36px;font-size:.88rem}
+:root[data-theme=dark] .btn,.btn{color:#fff}@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .btn:not(.o){color:#10200f}}
+.menu{display:none}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section.s{padding:44px 0}.bar{background:var(--gl)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.grid{display:grid;gap:18px}.g3{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.hero{position:relative;color:#fff;background:#223 center/cover;min-height:460px;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,35,15,.85),rgba(15,35,15,.35))}
+.hero .wrap{position:relative;padding-top:50px;padding-bottom:50px}.hero h1{color:#fff;max-width:620px}.hero p{max-width:520px;font-size:1.1rem}
+.hero .btn.o{color:#fff;border-color:#fff}.hero .btn.o:hover{background:rgba(255,255,255,.18)}
+.ph{aspect-ratio:4/3;border-radius:8px;background:repeating-linear-gradient(135deg,var(--gl),var(--gl) 12px,var(--card) 12px,var(--card) 24px);border:1px dashed var(--line);display:grid;place-items:center;text-align:center;font-size:.8rem;color:var(--mut);padding:8px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.tag{display:inline-block;background:var(--gl);color:var(--gd);border-radius:20px;padding:2px 10px;font-size:.8rem;font-weight:700}.tag.w{background:#f6e8c5;color:#6a4b00}
+table{width:100%;border-collapse:collapse;background:var(--card)}th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);font-size:.93rem}th{background:var(--gl);color:var(--gd)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r)}
+.price{font:700 1.15rem Georgia,serif;color:var(--br)}
+.pricetag{display:inline-flex;align-items:baseline;gap:5px;flex-wrap:wrap;white-space:nowrap}
+.pricetag .pt-cur{font:700 .85rem Georgia,serif;color:var(--gold);letter-spacing:.3px}
+.pricetag .pt-amt{font:700 1.3rem Georgia,serif;color:var(--br)}
+.pricetag .pt-unit{font:400 .75rem inherit;color:var(--mut);align-self:flex-end;margin-left:1px}
+.pricetag.pt-row{white-space:nowrap}.pricetag.pt-row .pt-amt{font-size:1.05rem}
+.pricetag.pt-inline .pt-amt{font-size:1.1rem}
+.rate{height:7px;background:var(--line);border-radius:5px;overflow:hidden;margin-top:3px}.rate b{display:block;height:100%;background:var(--g)}
+.lay{display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:start}
+label{display:block;font-weight:700;font-size:.92rem;margin:12px 0 4px}
+input[type=text],input[type=number],input[type=tel],input[type=search],input[type=date],select,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;min-height:44px}
+.chk{display:flex;gap:8px;align-items:center;font-weight:400;margin:6px 0}.chk input{width:18px;height:18px}
+.err{color:#b3261e;font-size:.85rem;margin-top:4px;min-height:1em}.ok{background:var(--gl);border:1px solid var(--g);border-radius:var(--r);padding:16px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.chips button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:20px;padding:6px 12px;cursor:pointer;font:inherit;font-size:.85rem}
+.chips button.on{background:var(--g);color:#fff;border-color:var(--g)}
+.crops{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:10px}
+.crop{border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:var(--r);padding:12px 6px;cursor:pointer;text-align:center;font:inherit;font-weight:700}
+.crop.on{border-color:var(--g);background:var(--gl)}.crop span{display:block;font-size:2rem;font-family:Georgia,serif;color:var(--g)}
+.steps{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}.steps div{padding:6px 14px;border-radius:20px;background:var(--line);font-weight:700;font-size:.88rem}.steps .on{background:var(--g);color:#fff}
+.num{width:30px;height:30px;border-radius:50%;background:var(--g);color:#fff;display:inline-grid;place-items:center;font-weight:700;margin-right:8px}
+footer{background:var(--gd);color:#fff;padding:14px 0;margin-top:40px;font-size:.85rem}footer a{color:#fff;margin-right:14px;display:inline-block;padding:2px 0}footer p{margin:0 0 4px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) footer{background:#0e140d}}
+@media(max-width:860px){.lay{grid-template-columns:1fr}.menu{display:inline-flex}nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--card);flex-direction:column;align-items:stretch;padding:10px 20px;border-bottom:1px solid var(--line)}nav.open{display:flex}.nav .btn.hide{display:none}.hero{min-height:420px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+header{border-bottom:0;box-shadow:0 1px 10px rgba(0,0,0,.08)}
+.nav a.l{border-radius:0;background:none;color:var(--ink);font-weight:600}
+.nav a.l:hover,.nav a.l[aria-current=page]{background:none;color:var(--g)}
+@media(max-width:860px){nav{border-bottom:0;box-shadow:0 8px 14px rgba(0,0,0,.08)}}
+footer{padding:8px 0;margin-top:24px;font-size:.8rem}footer p{margin:0}footer a,footer a:hover{text-decoration:none}footer a:hover{opacity:.8}footer a{padding:0;margin-right:12px}
+footer #bk{margin:0!important;font-size:.72rem!important}
+.bf{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:4px 16px;align-items:end;margin-bottom:20px}
+.bf h3{grid-column:1/-1;margin:0 0 4px}.bf .cats{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px 20px;align-items:center}.bf .cats .chk{margin:0}
+.bf .acts{grid-column:1/-1;display:flex;gap:8px;margin-top:10px}
+dialog{max-width:560px;width:92%;border:1px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);padding:20px}dialog::backdrop{background:rgba(0,0,0,.5)}
+a,a:hover,a:focus{text-decoration:none}
+body{min-height:100vh;min-height:100dvh;display:flex;flex-direction:column}main{flex:1 0 auto;width:100%}footer{margin-top:auto}
+.skip{position:absolute;left:-999px;top:8px}.skip:focus{left:8px;z-index:100;background:#fff;color:#1f4a28;padding:10px 14px;border-radius:8px}
+article.card{transition:box-shadow .2s,transform .2s}article.card:hover{box-shadow:0 8px 20px rgba(0,0,0,.1);transform:translateY(-2px)}.btn,.chips button,.crop{transition:background .15s,color .15s,border-color .15s,transform .1s}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+</style></head><body>
+<a class="skip" href="#app">Skip to content</a>
+<header><div class="wrap nav"><a class="logo" href="index.html"><i></i>Farm4Uself</a><a class="l home-l" href="index.html">Home</a>
+<button class="btn o sm menu" id="mb" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav id="nv" aria-label="Main"><a class="l" href="browse-produce.html">Browse Produce</a><a class="l" href="sell-produce.html">Sell Your Produce</a><a class="l" href="market-prices.html">Market Prices</a><a class="l" href="about.html" aria-current="page">About</a><a class="l" href="contact.html">Contact</a><a class="btn sm" href="browse-produce.html" style="margin-left:6px">Buy Produce</a></nav><a class="btn sm hide" href="sell-produce.html">Start Selling</a></div></header>
+<main id="app" tabindex="-1"><p class="wrap mut" style="padding:40px 20px" role="status">Loading Farm4Uself…</p></main>
+<footer><div class="wrap" style="display:flex;flex-wrap:wrap;gap:4px 18px;align-items:center;justify-content:space-between">
+<p style="flex:1;min-width:220px"><b>Farm4Uself</b> · Freetown and the Western Area</p>
+<div id="fl" style="display:flex;flex-wrap:wrap"><a href="index.html">Home</a><a href="browse-produce.html">Browse Produce</a><a href="sell-produce.html">Sell Your Produce</a><a href="market-prices.html">Market Prices</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="how-it-works.html">How It Works</a><a href="listing-directory.html">Listing Directory</a></div></div></footer>
+<script>
+
+const CAS=["images/photo-01.jpg","images/photo-02.jpg"];
+const KM={Waterloo:14,Kissy:8,Grafton:19,Hastings:18,Regent:12,Jui:16,Other:30};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const GE=["images/photo-03.jpg","images/photo-04.jpg","images/photo-05.jpg"];
+const MG="images/photo-06.jpg";
+const WM="images/photo-07.jpg";
+const SP="images/photo-08.jpg";
+const YM="images/photo-09.jpg";
+const RC="images/photo-10.jpg";
+const CK="images/photo-11.jpg";
+const BM="images/photo-12.jpg";
+const PLV="images/photo-13.jpg";
+const CLV="images/photo-14.jpg";
+const SG="images/photo-15.jpg";
+const ML="images/photo-16.jpg";
+const HN="images/photo-17.jpg";
+const PO="images/photo-18.jpg";
+const GB="images/photo-19.jpg";
+const AV="images/photo-20.jpg";
+const PW="images/photo-21.jpg";
+const PA="images/photo-22.jpg";
+const CU="images/photo-23.jpg";
+const LG="images/photo-24.jpg";
+const TM="images/photo-25.jpg";
+const GN="images/photo-26.jpg";
+const OR="images/photo-27.jpg";
+const PL="images/photo-28.jpg";
+const DF="images/photo-29.jpg";
+const PK="images/photo-30.jpg";
+const OK="images/photo-31.jpg";
+const BN=["images/photo-32.jpg","images/photo-33.jpg"];
+const MZ="images/photo-34.jpg";
+const PP=["images/photo-35.jpg","images/photo-36.jpg","images/photo-37.jpg"];
+const samp=l=>l.real?"":l.crop=="Cassava"?CAS[l.id%2]:l.crop=="Potato Leaves"?PLV:l.crop=="Cassava Leaves"?CLV:l.crop=="Sorghum"?SG:l.crop=="Millet"?ML:l.crop=="Honey"?HN:l.crop=="Palm Oil"?PO:l.crop=="Green Beans"?GB:l.crop=="Avocado"?AV:l.crop=="Pawpaw"?PW:l.crop=="Pineapple"?PA:l.crop=="Cucumber"?CU:l.crop=="Leafy Greens"?LG:l.crop=="Tomato"?TM:l.crop=="Groundnut"?GN:l.crop=="Orange"?OR:l.crop=="Plantain"?PL:l.crop=="Dry Fish"?DF:l.crop=="Pumpkin"?PK:l.crop=="Okra"?OK:l.crop=="Chicken"?CK:l.crop=="Bush Meat"?BM:l.crop=="Rice"?RC:l.crop=="Mango"?MG:l.crop=="Watermelon"?WM:l.crop=="Sweet Potato"?SP:l.crop=="Yam"?YM:l.crop=="Banana"?BN[l.id==10?1:0]:l.crop=="Maize"?MZ:l.crop=="Pepper"?PP[{2:0,6:1,8:2}[l.id]??0]:l.crop=="Garden Eggs"?GE[[0,2,1][l.id%3]]:"";
+const IMG={field:"images/photo-38.jpg",sun:"images/photo-39.jpg",veg:"images/photo-40.jpg"};
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const day=n=>{const d=new Date();d.setDate(d.getDate()-n);return d.toISOString().slice(0,10)};
+const fmt=d=>d.split("-").reverse().join("/");
+const CROPS={Cassava:["C","Grains & Tubers"],Pepper:["P","Vegetables"],"Garden Eggs":["G","Vegetables"],Maize:["M","Grains & Tubers"],Groundnut:["G","Grains & Tubers"],Banana:["B","Fruits"],Mango:["M","Fruits"],Watermelon:["W","Fruits"],"Sweet Potato":["S","Grains & Tubers"],Yam:["Y","Grains & Tubers"],Rice:["R","Grains & Tubers"],Chicken:["C","Meat, Poultry & Fish"],"Bush Meat":["B","Meat, Poultry & Fish"],"Dry Fish":["D","Meat, Poultry & Fish"],Pumpkin:["P","Vegetables"],Okra:["O","Vegetables"],Orange:["O","Fruits"],Plantain:["P","Fruits"],Honey:["H","Oils & Honey"],"Palm Oil":["P","Oils & Honey"],"Green Beans":["G","Vegetables"],Avocado:["A","Fruits"],Pawpaw:["P","Fruits"],Pineapple:["P","Fruits"],Cucumber:["C","Vegetables"],"Leafy Greens":["L","Vegetables"],Tomato:["T","Vegetables"],"Cassava Leaves":["C","Vegetables"],"Potato Leaves":["P","Vegetables"],Sorghum:["S","Grains & Tubers"],Millet:["M","Grains & Tubers"]};
+const UNITOF={Honey:"litre","Palm Oil":"litre",Pineapple:"piece",Pawpaw:"piece",Avocado:"piece","Leafy Greens":"bunch","Cassava Leaves":"bunch","Potato Leaves":"bunch"};
+const MKT={Cassava:10,Pepper:28,"Garden Eggs":14,Maize:11,Groundnut:24,Banana:12,Mango:9,Watermelon:6,"Sweet Potato":8,Yam:18,Rice:15,Chicken:45,"Bush Meat":60,"Dry Fish":80,Pumpkin:7,Okra:20,Orange:8,Plantain:14,Honey:60,"Palm Oil":35,"Green Beans":18,Avocado:3,Pawpaw:10,Pineapple:12,Cucumber:9,"Leafy Greens":2,Tomato:22,"Cassava Leaves":3,"Potato Leaves":3,Sorghum:12,Millet:14};
+let L=[
+{id:1,crop:"Cassava",price:9,qty:50,loc:"Waterloo",km:14,h:day(1),farmer:"Musa Conteh",rate:92,st:"Available"},
+{id:2,crop:"Pepper",price:30,qty:20,loc:"Kissy",km:8,h:day(2),farmer:"Aminata Kamara",rate:88,st:"Available"},
+{id:3,crop:"Garden Eggs",price:13,qty:35,loc:"Grafton",km:19,h:day(4),farmer:"Ibrahim Sesay",rate:95,st:"Available"},
+{id:4,crop:"Maize",price:11,qty:100,loc:"Hastings",km:18,h:day(0),farmer:"Fatu Bangura",rate:80,st:"Available"},
+{id:5,crop:"Cassava",price:10,qty:80,loc:"Regent",km:12,h:day(3),farmer:"Alie Turay",rate:90,st:"Available"},
+{id:6,crop:"Pepper",price:27,qty:15,loc:"Jui",km:16,h:day(-5),farmer:"Mariama Jalloh",rate:85,st:"Coming soon"},
+{id:7,crop:"Garden Eggs",price:14,qty:35,loc:"Waterloo",km:14,h:day(2),farmer:"Musa Conteh",rate:92,st:"Available"},
+{id:8,crop:"Pepper",price:29,qty:20,loc:"Waterloo",km:14,h:day(-4),farmer:"Musa Conteh",rate:92,st:"Coming soon"},
+{id:9,crop:"Banana",price:12,qty:40,loc:"Regent",km:12,h:day(0),farmer:"Isatu Koroma",rate:90,st:"Available"},
+{id:10,crop:"Banana",price:13,qty:25,loc:"Grafton",km:19,h:day(1),farmer:"Abu Kamara",rate:86,st:"Available"},
+{id:11,crop:"Mango",price:9,qty:60,loc:"Hastings",km:18,h:day(0),farmer:"Kadiatu Sesay",rate:91,st:"Available"},
+{id:12,crop:"Watermelon",price:6,qty:120,loc:"Jui",km:16,h:day(0),farmer:"Sorie Bangura",rate:87,st:"Available"},
+{id:13,crop:"Sweet Potato",price:8,qty:45,loc:"Waterloo",km:14,h:day(0),farmer:"Hawa Conteh",rate:93,st:"Available"},
+{id:14,crop:"Yam",price:18,qty:70,loc:"Regent",km:12,h:day(1),farmer:"Mohamed Kallon",rate:89,st:"Available"},
+{id:15,crop:"Rice",price:15,qty:200,loc:"Grafton",km:19,h:day(0),farmer:"Fatmata Jalloh",rate:88,st:"Available"},
+{id:16,crop:"Chicken",price:45,qty:30,loc:"Hastings",km:18,h:day(0),farmer:"Mamadu Kargbo",rate:90,st:"Available"},
+{id:17,crop:"Bush Meat",price:60,qty:15,loc:"Jui",km:16,h:day(0),farmer:"Salamatu Kamara",rate:84,st:"Available"},
+{id:18,crop:"Dry Fish",price:80,qty:25,loc:"Kissy",km:8,h:day(0),farmer:"Aminata Bangura",rate:89,st:"Available"},
+{id:19,crop:"Pumpkin",price:7,qty:60,loc:"Waterloo",km:14,h:day(0),farmer:"Joseph Kamara",rate:86,st:"Available"},
+{id:20,crop:"Okra",price:20,qty:15,loc:"Regent",km:12,h:day(0),farmer:"Zainab Koroma",rate:92,st:"Available"},
+{id:21,crop:"Groundnut",price:24,qty:40,loc:"Hastings",km:18,h:day(0),farmer:"Ramatu Kanu",rate:88,st:"Available"},
+{id:22,crop:"Orange",price:8,qty:150,loc:"Grafton",km:19,h:day(0),farmer:"Brima Conteh",rate:90,st:"Available"},
+{id:23,crop:"Plantain",price:14,qty:35,loc:"Waterloo",km:14,h:day(0),farmer:"Mabinty Sesay",rate:91,st:"Available"},
+{id:24,crop:"Honey",price:60,qty:20,loc:"Waterloo",km:14,h:day(0),farmer:"Alhaji Turay",rate:91,st:"Available",unit:"litre"},
+{id:25,crop:"Palm Oil",price:35,qty:50,loc:"Hastings",km:18,h:day(0),farmer:"Kadiatu Mansaray",rate:92,st:"Available",unit:"litre"},
+{id:26,crop:"Green Beans",price:18,qty:25,loc:"Regent",km:12,h:day(0),farmer:"Isata Fofanah",rate:93,st:"Available",unit:"kg"},
+{id:27,crop:"Avocado",price:3,qty:100,loc:"Jui",km:16,h:day(0),farmer:"Sheku Jalloh",rate:85,st:"Available",unit:"piece"},
+{id:28,crop:"Pawpaw",price:10,qty:40,loc:"Kissy",km:8,h:day(0),farmer:"Marie Kamara",rate:86,st:"Available",unit:"piece"},
+{id:29,crop:"Pineapple",price:12,qty:80,loc:"Grafton",km:19,h:day(0),farmer:"Bockarie Sesay",rate:87,st:"Available",unit:"piece"},
+{id:30,crop:"Cucumber",price:9,qty:60,loc:"Waterloo",km:14,h:day(0),farmer:"Hassan Koroma",rate:88,st:"Available",unit:"kg"},
+{id:31,crop:"Leafy Greens",price:2,qty:80,loc:"Kissy",km:8,h:day(0),farmer:"Ya Kadie Sillah",rate:89,st:"Available",unit:"bunch"},
+{id:32,crop:"Tomato",price:22,qty:70,loc:"Regent",km:12,h:day(0),farmer:"Amadu Barrie",rate:90,st:"Available",unit:"kg"},
+{id:33,crop:"Cassava Leaves",price:3,qty:100,loc:"Hastings",km:18,h:day(0),farmer:"Mariatu Kamara",rate:88,st:"Available",unit:"bunch"},
+{id:34,crop:"Potato Leaves",price:3,qty:90,loc:"Jui",km:16,h:day(0),farmer:"Josephine Sesay",rate:91,st:"Available",unit:"bunch"},
+{id:35,crop:"Sorghum",price:12,qty:120,loc:"Grafton",km:19,h:day(0),farmer:"Alusine Kamara",rate:86,st:"Available",unit:"kg"},
+{id:36,crop:"Millet",price:14,qty:80,loc:"Regent",km:12,h:day(0),farmer:"Foday Conteh",rate:89,st:"Available",unit:"kg"}];
+const days=h=>Math.round((new Date()-new Date(h))/864e5);
+const money=n=>"Le "+Math.round(Number(n)).toLocaleString("en-GB");
+// priceTag: big block renderer with "Le" + amount on one line, "per kg" as its own small line underneath
+const priceTag=(n,cls,unit)=>`<span class="pricetag ${cls||""}"><span class="pt-cur">Le</span><span class="pt-amt">${Math.round(Number(n)).toLocaleString("en-GB")}</span><span class="pt-unit">per ${unit||"kg"}</span></span>`;
+const waLink=t=>"https://wa.me/23273025826?text="+encodeURIComponent(t);
+const rateBar=r=>r==null?`<div class="mut">New seller, no replies recorded yet</div>`:`<div class="mut">Response rate ${r}%</div><div class="rate" role="img" aria-label="Response rate ${r} percent"><b style="width:${r}%"></b></div>`;
+const card=l=>`<article class="card">${l.real?'<span class="tag" style="margin-bottom:8px">Your demo listing</span>':'<span class="tag w" style="margin-bottom:8px">Sample listing</span>'}<div class="ph">${(l.img||samp(l))?`<img src="${l.img||samp(l)}" alt="${l.crop} listed by ${l.farmer}" loading="lazy" decoding="async">`:`Photo coming soon`}</div>
+<h3 style="margin-top:12px;display:flex;justify-content:space-between;align-items:flex-start;gap:8px">${l.crop} ${priceTag(l.price,"",l.unit)}</h3>
+<p class="mut" style="margin:0 0 8px">${l.qty} ${l.unit||"kg"} ${l.st.toLowerCase()} · ${l.loc} (${l.km} km)<br>Harvest ${fmt(l.h)}<br>Farmer: ${l.farmer}${l.phone?`<br>Call: <a href="tel:${l.phone.replace(/[^\d+]/g,"")}">${l.phone}</a>`:""}</p>${rateBar(l.rate)}
+<div style="display:flex;gap:8px;margin-top:12px"><a class="btn o sm" href="${waLink(`Hello, I saw ${l.crop} (${money(l.price)} per ${l.unit||"kg"}, ${l.qty} ${l.unit||"kg"}) listed by ${l.farmer} on Farm4Uself. Is it still available?`)}" target="_blank" rel="noopener">Message Farmer</a>${l.real?`<button class="btn sm" data-detail="${l.id}">Details &amp; Order</button>`:`<a class="btn sm" href="farmer-profile.html">View Details</a>`}</div></article>`;
+const PAGE={home:"index.html",browse:"browse-produce.html",sell:"sell-produce.html",seller:"sell-produce.html",prices:"market-prices.html",about:"about.html",contact:"contact.html",how:"how-it-works.html",farmer:"farmer-profile.html",dir:"listing-directory.html"};
+const LS="f4u_demo_listings",OS="f4u_demo_orders";
+const readJ=k=>{try{const v=JSON.parse(localStorage.getItem(k)||"[]");return Array.isArray(v)?v:[]}catch(e){return []}};
+const writeJ=(k,v)=>localStorage.setItem(k,JSON.stringify(v));
+const num=(v,d)=>Number.isFinite(+v)?+v:d;
+const fromProd=(p,sid,pr)=>{const im=(Array.isArray(p.imgs)?p.imgs:[]).filter(u=>/^(\/_blob\/|https:\/\/|data:image\/(jpeg|png);base64,)/.test(u)).map(esc);
+return{id:sid+":"+p.id,sid,pid:p.id,real:true,crop:esc(p.name),cat:p.cat,price:num(p.price,0),qty:num(p.qty,0),unit:esc(p.unit||"kg"),loc:esc(p.loc),km:KM[p.loc]||30,h:/^\d{4}-\d{2}-\d{2}$/.test(p.h)?p.h:day(0),farmer:esc(pr.farm),rate:null,st:p.st=="Coming soon"?"Coming soon":"Available",desc:esc(p.desc),delivery:esc(p.delivery),imgs:im,img:im[0]||""}};
+let MY=readJ(LS),ORD=readJ(OS);const BASE=L.slice();
+const syncMy=()=>{L=MY.filter(p=>p.pub!==false&&p.st!="Unavailable").map(p=>fromProd(p,"demo",{farm:p.farm||"Demo Farm"})).concat(BASE)};
+syncMy();
+const V={};
+function toast(m){let t=$("#ts");if(!t){t=document.createElement("div");t.id="ts";t.setAttribute("role","status");t.style.cssText="position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--gd);color:#fff;padding:12px 18px;border-radius:8px;z-index:50;max-width:90%";document.body.appendChild(t)}t.textContent=m;t.style.display="block";clearTimeout(t._t);t._t=setTimeout(()=>t.style.display="none",3500)}
+V.about=()=>`<section class="s"><div class="wrap"><p class="mut">Home › About</p><h1>About Farm4Uself</h1><p>A simple way for farmers and city buyers in Sierra Leone to find each other.</p>
+<div class="grid g2" style="align-items:center"><div class="card"><h2>Our mission</h2><p style="font-size:1.1rem">We want farmers to get a fair price for their hard work, and buyers to know who grew their food. We're starting with Freetown and the Western Area.</p></div><div class="ph" style="aspect-ratio:auto"><img src="${IMG.field}" alt="Rows of green crops in a field under a clear sky" style="max-height:300px"></div></div>
+<div class="grid g2" style="margin-top:24px"><div class="card"><h3>The problem</h3><ul><li>Between the farm and the city there are often middlemen, so farmers may have to accept whatever price they are offered.</li><li>Many farmers can't see what their crops sell for in Freetown.</li><li>Buyers can't always tell which farmers they can count on.</li></ul></div>
+<div class="card"><h3>Our approach</h3><ul><li>Farmers and buyers talk to each other directly.</li><li>A price board anyone can check, so everyone knows what's fair.</li><li>Picture-led listings that are easy to use, even if you don't read or type much.</li></ul></div></div>
+<h2 style="margin-top:28px">What you can do here</h2><div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">${[["browse","Browse Produce","Compare produce by price, area and harvest date"],["farmer","Farmer Profiles","See how quickly a farmer replies before you call"],["prices","Market Prices","See what crops sell for in Freetown"],["sell","Sell Your Produce","Put a crop up for sale in three easy steps"]].map(([h,t,d])=>`<a class="card" href="${PAGE[h]}" style="text-decoration:none;color:inherit"><h3>${t}</h3><p class="mut" style="margin:0">${d}</p></a>`).join("")}</div>
+<h2 style="margin-top:28px">Who we're building this for</h2><div class="grid g2"><div class="card"><h3>Someone like a farmer in Waterloo</h3><p>Grows cassava, pepper and garden eggs, and wants a fair price and an easy way to sell.</p><a class="btn" href="sell-produce.html">Start Selling</a></div>
+<div class="card"><h3>Someone like a restaurant owner in Aberdeen</h3><p>Buys every week for her kitchen, and wants fresh produce from a farmer she can trust.</p><a class="btn o" href="browse-produce.html">Buy Produce</a></div></div></div></section>`;
+function openDetail(id){const l=L.find(x=>x.id==id);if(!l)return;let d=$("#dlg");if(!d){d=document.createElement("dialog");d.id="dlg";document.body.appendChild(d)}
+const ok=l.st=="Available"&&l.qty>0;
+d.innerHTML=`<h2>${l.crop}</h2>${l.imgs&&l.imgs.length?`<div style="display:flex;gap:6px;overflow-x:auto;margin-bottom:8px">${l.imgs.map(u=>`<img src="${u}" alt="${l.crop}" style="height:150px;border-radius:8px">`).join("")}</div>`:""}<p>${l.desc||"No description provided."}</p><p class="mut">Seller: ${l.farmer} · ${l.loc}<br>Harvest ${fmt(l.h)} · ${l.qty} ${l.unit} available${l.delivery?" · "+l.delivery:""}</p><p>${priceTag(l.price,"",l.unit)}</p>
+${ok?`<form id="of" novalidate><label for="oq">Quantity (${l.unit})</label><input type="number" id="oq" min="1" max="${l.qty}" value="1"><label for="on">Your name</label><input type="text" id="on"><label for="op">Your phone number</label><input type="tel" id="op" placeholder="+232 ___ ___ ___"><label for="om">Collection or delivery</label><select id="om"><option>Collection</option><option>Delivery</option></select><label for="oa">Delivery address or collection notes</label><input type="text" id="oa"><p id="ot" style="font-weight:700"></p><p class="mut">Your phone number and address are not saved in this demo. No online payment is processed. You pay the seller directly when you collect or receive your produce. Online payment needs a payment provider to be set up.</p><div class="err" id="oe" role="alert"></div><div style="display:flex;gap:8px"><button class="btn" id="ob">Review order</button><button type="button" class="btn o" id="oc">Close</button></div></form>`:`<p><b>This product cannot be ordered right now.</b></p><button class="btn o" id="oc">Close</button>`}`;
+d.showModal();$("#oc").onclick=()=>d.close();const f=$("#of");if(!f)return;let rev=false;
+f.onsubmit=async e=>{e.preventDefault();const q=+$("#oq").value,n=$("#on").value.trim(),p=$("#op").value.trim(),m=$("#om").value,a=$("#oa").value.trim(),er=$("#oe");
+if(!Number.isInteger(q)||q<1)return er.textContent="Enter a whole quantity of 1 or more.";if(q>l.qty)return er.textContent="Only "+l.qty+" "+l.unit+" available.";if(n.length<2)return er.textContent="Enter your name.";
+if(!/^\+?[\d\s-]{7,15}$/.test(p))return er.textContent="Enter a valid phone number.";if(m=="Delivery"&&a.length<4)return er.textContent="Enter your delivery address.";er.textContent="";
+if(!rev){rev=true;$("#ot").textContent="Order: "+q+" "+l.unit+" × "+money(l.price)+" = "+money(q*l.price)+". Check the details, then confirm.";$("#ob").textContent="Confirm order";return}
+
+const b=$("#ob");b.disabled=true;b.textContent="Sending…";
+try{ORD.unshift({id:"o"+Date.now(),sid:l.sid,pid:l.pid,name:l.crop,unit:l.unit,qty:q,price:l.price,total:q*l.price,buyer:n,method:m,status:"pending",at:new Date().toISOString()});writeJ(OS,ORD);
+f.innerHTML=`<div class="ok" role="status"><b>Demo order placed.</b> This is a demonstration, so nothing was sent or saved. Total: ${money(q*l.price)}, paid directly to the seller.</div><button type="button" class="btn o" id="oc2" style="margin-top:10px">Close</button>`;$("#oc2").onclick=()=>d.close()}
+catch(x){b.disabled=false;b.textContent="Confirm order";er.textContent="The demo order could not be placed. Try again."}}}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-detail]");if(t)openDetail(t.dataset.detail)});
+
+$("#mb").onclick=e=>{const o=$("#nv").classList.toggle("open");e.target.setAttribute("aria-expanded",o)};
+$("#app").innerHTML=V.about();
+</script></body></html>
